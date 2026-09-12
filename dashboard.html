@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Student Dashboard • Chitransh Study Hub</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><div class="brand-mark">C</div><div><h1>Chitransh Study Hub</h1><span>Student Dashboard</span></div></a>
+  <div class="nav-actions"><a class="admin-link" href="index.html">Home</a><button class="link-btn hidden" id="logoutBtn">Logout</button></div>
+</header>
+<main class="container dashboard-page">
+  <section class="dash-welcome">
+    <div><span class="pill">🌟 YOUR PREPARATION ZONE</span><h2 id="welcomeTitle">Welcome back, Student! 👋</h2><p id="welcomeText">Consistency chhoti ho ya badi—har attempt tumhe goal ke aur paas le jaata hai. 💪</p></div>
+    <div class="motivation-chip" id="motivationChip">🔥 Aaj ka target: 1 test</div>
+  </section>
+
+  <section class="stat-grid">
+    <div class="dashboard-stat"><span>📝 Tests Given</span><strong id="testsGiven">0</strong><small>Total attempts</small></div>
+    <div class="dashboard-stat"><span>🎯 Average Accuracy</span><strong id="avgAccuracy">0%</strong><small>Across saved results</small></div>
+    <div class="dashboard-stat"><span>🏆 Best Score</span><strong id="bestScore">0</strong><small>Net marks</small></div>
+    <div class="dashboard-stat"><span>📈 Total Correct</span><strong id="totalCorrect">0</strong><small>Questions mastered</small></div>
+  </section>
+
+  <section class="dash-grid">
+    <section class="panel progress-card">
+      <div class="panel-head"><h3>🚀 Your Progress</h3><span id="progressLabel">Keep going!</span></div>
+      <div class="big-progress"><div class="big-progress-fill" id="progressFill" style="width:0%"></div></div>
+      <div class="progress-row"><span>Accuracy goal: <strong>80%</strong></span><strong id="goalValue">0%</strong></div>
+      <div class="streak" id="streakText">🔥 Start your streak by taking a test today.</div>
+    </section>
+    <section class="panel quick-card">
+      <div class="panel-head"><h3>⚡ Quick Start</h3></div>
+      <p>Practice se confidence build hota hai. Ek test choose karo aur start kar do.</p>
+      <div class="quick-actions"><a class="btn primary" href="index.html#tests">🎯 Start a Test</a><a class="btn secondary" href="index.html#notes">📚 Study Notes</a></div>
+    </section>
+  </section>
+
+  <section class="panel history-card">
+    <div class="panel-head"><div><h3>📊 Result History</h3><p>Supabase mein save hue tumhare latest results.</p></div><span id="historyCount">0 results</span></div>
+    <div id="historyList" class="history-list"></div>
+  </section>
+</main>
+<footer><div>© <span id="year"></span> Chitransh Study Hub</div><div>Founder Team — <strong>Chitransh • Anil • Kanhaiya</strong></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script><script src="dashboard.js"></script>
+</body></html>

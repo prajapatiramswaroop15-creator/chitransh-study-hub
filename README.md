@@ -21,3 +21,11 @@ Use only the Supabase Project URL and Publishable key in `config.js`. Never put 
 
 ## V5 update
 - Result page now shows every question with correct answer, user answer, skipped status, and explanation when the result was submitted in V5.
+
+## V6 additions
+- Student Dashboard page (`dashboard.html`)
+- Supabase-backed result history
+- Average accuracy, best score, tests given, total correct
+- 80% accuracy goal visual
+- Motivational progress messaging and quick actions
+- Dashboard and Home navigation
