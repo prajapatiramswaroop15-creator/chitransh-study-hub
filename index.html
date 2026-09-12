@@ -1,14 +1,236 @@
 <!DOCTYPE html>
-<html lang="hi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Chitransh Study Hub</title><link rel="stylesheet" href="styles.css"></head>
-<body><header class="topbar"><a class="brand" href="index.html"><div class="brand-mark">C</div><div><h1>Chitransh Study Hub</h1><span>Competitive Exam Preparation</span></div></a><div class="nav-actions"><a id="loginLink" class="admin-link" href="admin.html">Admin / Login</a><button id="logoutBtn" class="link-btn hidden">Logout</button></div></header>
-<main class="container"><section class="hero"><div><span class="pill">FREE • TESTS • NOTES • PRACTICE</span><h2>Padho. Practice karo.<br><span>Selection ke liye taiyar raho.</span></h2><p>CET, Railway, ALP, Group D aur anya competitive exams ke liye smart study platform.</p><div class="hero-actions"><a class="btn primary" href="#tests">Start Mock Test</a><a class="btn secondary" href="#notes">View Notes</a></div></div><div class="hero-card"><div class="hero-card-top">Online Platform</div><div class="focus-title">Real Database</div><div class="progress"><div class="progress-fill" style="width:88%"></div></div><div class="focus-meta"><span>Supabase Connected</span><strong>V3</strong></div></div></section>
-<section class="quick-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 24px">
-          <div class="card" style="padding:16px"><span class="tag">🎯 PRACTICE</span><h4 style="margin-bottom:0">Mock Tests</h4><p style="margin:4px 0 0">Timer + instant result</p></div>
-          <div class="card" style="padding:16px"><span class="tag">📚 REVISION</span><h4 style="margin-bottom:0">Smart Notes</h4><p style="margin:4px 0 0">Topic-wise preparation</p></div>
-          <div class="card" style="padding:16px"><span class="tag">🏆 MISSION</span><h4 style="margin-bottom:0">Chitransh • Anil • Kanhaiya</h4><p style="margin:4px 0 0">Built for students</p></div>
-        </section>
-        <section class="section" id="tests"><div class="section-head"><div><h3>Popular Mock Tests</h3><p>Online questions + timer + instant result.</p></div><span class="count" id="testCount">Loading…</span></div><div class="grid" id="testGrid"></div></section>
-<section class="section" id="notes"><div class="section-head"><div><h3>Study Notes</h3><p>Topic-wise revision material.</p></div></div><div class="grid" id="noteGrid"><article class="card"><span class="tag">Coming in V3.1</span><h4>PDF Notes</h4><p>Supabase Storage connect hone ke baad notes upload/download yahin se hoga.</p></article></div></section>
-<section class="cta"><div><span class="pill">FOUNDER TEAM</span><h3>Chitransh • Anil • Kanhaiya</h3><p>Students ke liye simple, useful aur exam-focused platform.</p></div><a class="btn primary" href="admin.html">Open Admin Panel</a></section></main>
-<footer><div>© <span id="year"></span> Chitransh Study Hub</div><div>Founder Team — <strong>Chitransh • Anil • Kanhaiya</strong></div></footer>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="app.js"></script></body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Chitranah Study Hub - Mock Tests, Notes, Progress and exam preparation.">
+<meta name="theme-color" content="#6c5ce7">
+<title>Chitranah Study Hub | V7</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark">C</div>
+    <div>
+      <strong>Chitranah Study Hub</strong>
+      <small>Learn • Practice • Progress • Achieve</small>
+    </div>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#tests">Mock Tests</a>
+    <a href="#features">Features</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <span class="eyebrow">🚀 V7 • Your exam preparation hub</span>
+    <h1>Study smarter.<br><span>Practice better.</span><br>Achieve more.</h1>
+    <p>Focused mock tests and a clean study experience designed for serious exam preparation.</p>
+    <div class="hero-actions">
+      <a class="primary-btn" href="#tests">Start Mock Tests <span>→</span></a>
+      <a class="ghost-btn" href="#features">Explore Hub</a>
+    </div>
+    <div class="mini-stats">
+      <div><b>15</b><small>Tests ready</small></div>
+      <div><b>∞</b><small>Practice</small></div>
+      <div><b>24×7</b><small>Access</small></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="orb orb-a"></div><div class="orb orb-b"></div>
+    <div class="study-card">
+      <div class="study-card-top"><span>🎯 Today's Focus</span><b>V7</b></div>
+      <h3>Mock Test Challenge</h3>
+      <div class="progress"><i></i></div>
+      <div class="study-row"><span>Practice</span><b>15 Tests</b></div>
+      <div class="study-row"><span>Goal</span><b>Keep going 🔥</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="section-head">
+    <div><span class="eyebrow">WHY CHITRANAH</span><h2>Everything you need to practice</h2></div>
+    <p>V7 is being built as a complete student platform. More features will be connected with Supabase in the next stages.</p>
+  </div>
+  <div class="feature-grid">
+    <div class="feature"><span>📝</span><h3>Mock Tests</h3><p>Attempt topic-wise tests and review your performance.</p></div>
+    <div class="feature"><span>📊</span><h3>Progress</h3><p>Track scores, accuracy and improvement over time.</p></div>
+    <div class="feature"><span>🏆</span><h3>Leaderboard</h3><p>Compete with other learners and stay motivated.</p></div>
+    <div class="feature"><span>📚</span><h3>Notes</h3><p>Keep important study material organized in one place.</p></div>
+  </div>
+</section>
+
+<section class="section tests-section" id="tests">
+  <div class="section-head">
+    <div><span class="eyebrow">PRACTICE ZONE</span><h2>Choose a Mock Test</h2></div>
+    <div class="search-wrap"><input id="search" type="search" placeholder="Search tests..."></div>
+  </div>
+  <div class="test-grid" id="testGrid">
+    
+    <article class="test-card">
+      <div class="test-icon">🥗</div>
+      <div class="test-body">
+        <span class="test-no">TEST 01</span>
+        <h3>Nutrition</h3>
+        <p>Nutrition &amp; balanced diet</p>
+        <a class="start-btn" href="tests/_Test-1_Nutrition_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">🧬</div>
+      <div class="test-body">
+        <span class="test-no">TEST 02</span>
+        <h3>Digestive System</h3>
+        <p>Digestive system practice</p>
+        <a class="start-btn" href="tests/_Test-2_Digestive_System_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">🩸</div>
+      <div class="test-body">
+        <span class="test-no">TEST 03</span>
+        <h3>Blood</h3>
+        <p>Blood &amp; components</p>
+        <a class="start-btn" href="tests/_Test-3_Blood_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">❤️</div>
+      <div class="test-body">
+        <span class="test-no">TEST 04</span>
+        <h3>Circulatory System</h3>
+        <p>Circulation &amp; heart</p>
+        <a class="start-btn" href="tests/_Test-4_circulatorySystem_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">🧪</div>
+      <div class="test-body">
+        <span class="test-no">TEST 05</span>
+        <h3>Excretory System</h3>
+        <p>Excretion &amp; kidneys</p>
+        <a class="start-btn" href="tests/_Test-5_excretory_System_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">🧠</div>
+      <div class="test-body">
+        <span class="test-no">TEST 06</span>
+        <h3>Nervous System</h3>
+        <p>Nervous system</p>
+        <a class="start-btn" href="tests/_Test-6_Nervous_System_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">⚡</div>
+      <div class="test-body">
+        <span class="test-no">TEST 07</span>
+        <h3>Endocrine System</h3>
+        <p>Hormones &amp; glands</p>
+        <a class="start-btn" href="tests/_Test-7_Endocrine_System_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">🫁</div>
+      <div class="test-body">
+        <span class="test-no">TEST 08</span>
+        <h3>Respiratory System</h3>
+        <p>Breathing &amp; respiration</p>
+        <a class="start-btn" href="tests/_Test-8_Respiratory_System_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">🔬</div>
+      <div class="test-body">
+        <span class="test-no">TEST 09</span>
+        <h3>Cell</h3>
+        <p>Cell structure &amp; functions</p>
+        <a class="start-btn" href="tests/_Test-9_Cell_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">🧫</div>
+      <div class="test-body">
+        <span class="test-no">TEST 10</span>
+        <h3>Tissue</h3>
+        <p>Plant &amp; animal tissues</p>
+        <a class="start-btn" href="tests/_Test-10_Tissue_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">🌾</div>
+      <div class="test-body">
+        <span class="test-no">TEST 11</span>
+        <h3>Improvement in Food Resources</h3>
+        <p>Food resources practice</p>
+        <a class="start-btn" href="tests/_Test-11_Improvement_in_food_resources_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">🧬</div>
+      <div class="test-body">
+        <span class="test-no">TEST 12</span>
+        <h3>Reproduction</h3>
+        <p>Reproduction</p>
+        <a class="start-btn" href="tests/_Test-12_Reproduction_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">🧬</div>
+      <div class="test-body">
+        <span class="test-no">TEST 13</span>
+        <h3>Heredity</h3>
+        <p>Heredity &amp; genetics</p>
+        <a class="start-btn" href="tests/_Test-13_Heridity_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">🌱</div>
+      <div class="test-body">
+        <span class="test-no">TEST 14</span>
+        <h3>Botany</h3>
+        <p>Botany practice</p>
+        <a class="start-btn" href="tests/_Test-14_Botany_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+    <article class="test-card">
+      <div class="test-icon">📏</div>
+      <div class="test-body">
+        <span class="test-no">TEST 15</span>
+        <h3>Units &amp; Measurements</h3>
+        <p>Units &amp; measurements</p>
+        <a class="start-btn" href="tests/_Test-15_Units_and_measurements_.html">Start Test <span>→</span></a>
+      </div>
+    </article>
+    
+  </div>
+</section>
+</main>
+
+<footer>
+  <div><strong>🎓 Chitranah Study Hub</strong><span>V7 • Built for better preparation</span></div>
+  <span>© 2026 Chitranah Study Hub</span>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
