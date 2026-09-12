@@ -1,30 +1,23 @@
-# Chitransh Study Hub — V3
+# Chitransh Study Hub — V4
 
-V3 connects the GitHub Pages frontend to Supabase.
+## New: Bulk Question Upload
+Admin Panel se CSV ke through 100–120 questions ek saath upload kiye ja sakte hain.
 
-## Features
-- Online tests loaded from Supabase
-- Secure email/password admin login
-- Admin-only test creation and deletion
-- Admin-only question creation and deletion
-- Mock test timer and question palette
-- 1/3-style negative marking support via decimal `0.333`
-- Automatic result calculation
-- Results can be saved for logged-in students
-- Founder branding: Chitransh • Anil • Kanhaiya
+Required CSV columns:
+`question,option_a,option_b,option_c,option_d,correct,explanation,question_order`
 
-## Setup order
-1. In Supabase SQL Editor, run the earlier V3 database SQL you already used.
-2. Then run `supabase_admin_policies.sql` once.
-3. Create your account from `admin.html` using the Create Account button.
-4. In Supabase SQL Editor, promote your own account to admin by replacing YOUR_EMAIL:
+`correct` = A/B/C/D or 0/1/2/3.
 
-   update public.profiles
-   set role = 'admin'
-   where id = (select id from auth.users where email = 'YOUR_EMAIL');
+## Existing features
+- Supabase Admin login
+- Online tests and questions
+- Mock test timer
+- Automatic result and negative marking
+- Admin add/delete test and question
+- Founder Team: Chitransh • Anil • Kanhaiya
 
-5. In `config.js`, paste your Supabase Project URL and Publishable key.
-6. Upload all V3 files to the GitHub repository root and wait for Pages to deploy.
+## Safety
+Use only the Supabase Project URL and Publishable key in `config.js`. Never put a secret/service-role key in the website.
 
-## Security
-Do NOT put a Supabase secret/service_role key in `config.js`. The browser should use only the publishable key. RLS policies protect data access.
+## V5 update
+- Result page now shows every question with correct answer, user answer, skipped status, and explanation when the result was submitted in V5.
